@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <form id="meraForm" action="">
+        <input type="number" name="iter" id="iter" placeholder="No. of elements">
+        <input type="number" name="lower" id="lower" placeholder="Lower-Bound">
+        <input type="number" name="upper" id="upper" placeholder="Upper-Bound">
+        <input type="range" name="speed" id="speed" min="500" max="10500" value="500" step="500">
+    </form>
+
+    <div class="content">
+       <div id="speedValue">Time Interval :</div>
+       <div id="numbers">Number:</div>
+       <div id="answer">Result:</div>
+    </div>
+    <button onclick="return generate()">Generate</button>
+    <button onclick="return display()">Result</button>
+    <button onclick="return resets()">Reset</button>
+
+</body>
+<script src="index.js"></script>
+</html>
